@@ -1,0 +1,57 @@
+.header{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.263);
+    background-color: orangered;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    user-select: none;
+    color: white;
+    
+    h1{
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    ul{
+        list-style: none;
+        gap: 50px;
+        display: flex;
+        margin-left: 850px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    li {
+      font-size: 23px;
+        position: relative;
+        padding-bottom: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+        &::after {
+          content: ''; 
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #fdfdfd3a;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+      
+        &:hover::after {
+          transform: scaleX(1);
+        }
+  
+  }
+
+  #burger{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .burger-menu{
+    display: none;
+  }
+}
+

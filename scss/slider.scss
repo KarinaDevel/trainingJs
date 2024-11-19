@@ -1,0 +1,47 @@
+.top {
+    display: flex;
+    align-items: center;
+
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        svg {
+            height: 30px;
+            width: 30px;
+        }
+    }
+        button:nth-of-type(2) {
+            transform: rotate(180deg);
+        
+    }
+
+    .block {
+        display: block;
+    }
+
+    img {
+        width: 250px;
+        height: 350px;
+        display: none;
+        margin-bottom: 10px;
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    div {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid orangered;
+    }
+
+    .active {
+        background-color: orangered;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="/styles/slider.css">
+</head>
+
+<body style="background-color: rgb(13, 1, 40);">
+    <section class="header">
+        <button class="burger-menu" id="burger" onclick="openBurger()" onmouseleave="closeBurger()">
+            <svg class="burger-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                viewBox="0 0 50 50">
+                <path fill="white"
+                    d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                </path>
+            </svg>
+        </button>
+        <h1>CINEMA.WATCH</h1>
+        <ul class="header__links" id="list">
+            <li class="header__link">Запись на сеанс</li>
+            <li class="header__link">Каталог фильмов</li>
+            <li class="header__link">Новые фильмы</li>
+        </ul>
+    </section>
+
+
+
+    <div class="modal">
+        <button id="modal-btn" onclick="openWindow()">Show modal window</button>
+        <div id="modalOpen">
+            <h2>Hello</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis quam doloribus! Sunt,
+                corrupti consequatur?</p>
+            <button onclick="closeWindow()">Close</button>
+        </div>
+    </div>
+
+    <section class="slider">
+        <div class="top">
+            <button class="btn" id="btnLeft">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 7L10 12L15 17" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div>
+                <img src="/imgs/firstslide.webp" alt="first" class="sliderImg block">
+                <img src="/imgs/secondslide.jpg" alt="second" class="sliderImg">
+                <img src="/imgs/thirdslide.jpeg" alt="third" class="sliderImg">
+                <img src="/imgs/fourthslide.jpg" alt="fourth" class="sliderImg">
+            </div>
+
+            <button class="btn" id="btnRight" onclick="nextSlide()">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 7L10 12L15 17" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+        </div>
+
+        <div class="bottom" id="bottom">
+            <div class="circle active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
